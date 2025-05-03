@@ -41,7 +41,7 @@
 /// СТАРТ СБОРКИ
 
    1. Установить свежую версию node.js (https://nodejs.org/en)
-   2. Уставноить пакеты через терминал редактора кода
+   2. Установить пакеты через терминал редактора кода
 
    Команда для установки всех пакетов:
       npm i gulp gulp-sass sass gulp-file-include gulp-clean browser-sync gulp-sourcemaps gulp-plumber gulp-replace gulp-notify gulp-group-css-media-queries gulp-version-number webpack-stream style-loader css-loader gulp-babel @babel/core @babel/preset-env gulp-imagemin@7 gulp-changed@4 gulp-autoprefixer gulp-csso gulp-webp gulp-webp-html gulp-webp-css --save-dev
