@@ -13,6 +13,7 @@
       </main>
       @@include('php/blocks/footer.php')
    </div>
+   <script src="js/script.min.js"></script>
 </body>
 
 </html>
