@@ -1,0 +1,13 @@
+.footer {
+   background-color: skyblue;
+   padding: 100px 0;
+   font-size: 28px;
+   color: #000;
+   @media (max-width: 1200px) {
+      font-size: 22px;
+   }
+}
+p {
+   color: red;
+   font-size: 64px;
+}
