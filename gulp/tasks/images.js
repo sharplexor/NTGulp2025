@@ -5,7 +5,6 @@ import webp from "gulp-webp";
 export const images = () => {
    return app.gulp
       .src(app.path.src.images, { encoding: false })
-      .pipe(changed(app.path.build.images))
       .pipe(webp())
       .pipe(app.gulp.dest(app.path.build.images))
       .pipe(app.gulp.src(app.path.src.images, { encoding: false }))
