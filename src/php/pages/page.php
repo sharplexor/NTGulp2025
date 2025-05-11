@@ -7,6 +7,7 @@
    <div class="wrapper">
       @@include('../blocks/header.php')
       <main class="main">
+         @@include('../blocks/start.php')
          <!--@@include('../blocks/.php')-->
          <!--@@include('../blocks/.php')-->
          <!--@@include('../blocks/.php')-->
