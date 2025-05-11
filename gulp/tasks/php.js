@@ -34,9 +34,6 @@ export const php = () => {
                cover: 0,
                to: ["css", "js"],
             },
-            output: {
-               file: "gulp/version.json",
-            },
          })
       )
       .pipe(app.gulp.dest(app.path.build.php))
