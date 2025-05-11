@@ -1,3 +1,3 @@
 <header class="header">
-   <h1>Привет!</h1>
+   <h1></h1>
 </header>
