@@ -28,8 +28,18 @@
    4. Включить OpenServer, выбрать необходимые модули для проекта (версия PHP, Nginx и прочее)
    5. В новой версии OSPanel интерфейс базы данных MySQL устанавливается отдельно (https://www.phpmyadmin.net/downloads/)
    6. Кинуть базу аналогично в папку ....OSPanel\home\ создать и настроить в ней (.osp\project.ini), подключить модуль MySQL
+      6.1 Содержание (.osp\project.ini):
+            [BaseName]
+            public_dir   = {base_dir}
+      6.2 В корневом каталоге PHPMyAdmin находим файл config.sample.inc.php и переименовываем в config.inc.php
+      6.3 В самом файле config.inc.php делаем следующие правки:
+            - в строку $cfg['blowfish_secret'] = ''; вписываем 32-битный код (можно сгенерировать), например $cfg['blowfish_secret'] = 'Z4wvCIqPNrAJm53xt{JdGnjKgSTl1eJb';
+            - в строке $cfg['Servers'][$i]['host'] = 'localhost'; меняем имя хоста на имя версии модуля MySQL, например $cfg['Servers'][$i]['host'] = 'MySQL-8.4';
+            - также можно изменить значение $cfg['Servers'][$i]['AllowNoPassword'] = false; на true (для авторизации без пароля)
+      После перезапуска OSPanel можешь заходить на PHPMyAdmin по стандартному логину root
 
-   Получится следующая структура:
+
+   В итоге получится следующая структура проекта:
    
    /home
       //Папка проекта
